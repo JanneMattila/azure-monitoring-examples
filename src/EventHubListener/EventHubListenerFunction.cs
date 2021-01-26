@@ -12,7 +12,10 @@ namespace EventHubListener
     public static class EventHubListenerFunction
     {
         [FunctionName("EventHubListenerFunction")]
-        public static async Task Run([EventHubTrigger("monitor", Connection = "")] EventData[] events, ILogger log)
+        public static async Task Run(
+            [EventHubTrigger("monitoring", Connection = "EventHubConnectionAppSetting", ConsumerGroup = "monitoring")]
+            EventData[] events, 
+            ILogger log)
         {
             var exceptions = new List<Exception>();
             foreach (var eventData in events)
