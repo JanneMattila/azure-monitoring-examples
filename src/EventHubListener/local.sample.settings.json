@@ -3,6 +3,7 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "EventHubConnectionAppSetting": "<Event Hub Connection string here>"
+    "EventHubConnectionAppSetting": "<Event Hub Connection string here>",
+    "FORWARD_ADDRESS": "<your request bin endpoint here>"
   }
 }

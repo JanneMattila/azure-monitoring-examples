@@ -1,0 +1,38 @@
+{
+    "records": [
+        {
+            "time": "2021-01-26T17:51:47.9784395Z",
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORING",
+            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+            "Type": "AppExceptions",
+            "AppRoleInstance": "servername",
+            "ClientCity": "Helsinki",
+            "ClientCountryOrRegion": "Finland",
+            "ClientIP": "0.0.0.0",
+            "ClientStateOrProvince": "Uusimaa",
+            "ClientType": "PC",
+            "IKey": "04...9d",
+            "_BilledSize": 609,
+            "SDKVersion": "dotnetc:2.10.0-31626",
+            "Properties": {
+                "NodeKey": "1234567890",
+                "DataKey": "ABCDEF"
+            },
+            "Details": [
+                {
+                    "outerId": "0",
+                    "message": "Retail SBT Backend is not responding. Please follow these instructions next: https://bit.ly/ContosoITRetailSBTBackend",
+                    "type": "ContosoRetailBackendException",
+                    "id": "33476626"
+                }
+            ],
+            "ProblemId": "ContosoRetailBackendException",
+            "ExceptionType": "ContosoRetailBackendException",
+            "Assembly": "Unknown",
+            "Method": "Unknown",
+            "OuterType": "ContosoRetailBackendException",
+            "OuterMessage": "Retail SBT Backend is not responding. Please follow these instructions next: https://bit.ly/ContosoITRetailSBTBackend",
+            "ItemCount": 1
+        }
+    ]
+}
