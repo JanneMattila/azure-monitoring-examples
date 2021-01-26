@@ -1,0 +1,110 @@
+{
+    "records": [
+        {
+            "count": 1,
+            "total": 4222,
+            "minimum": 4222,
+            "maximum": 4222,
+            "average": 4222,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T12:59:00.0000000Z",
+            "metricName": "performanceCounters/processIOBytesPerSecond",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 0,
+            "minimum": 0,
+            "maximum": 0,
+            "average": 0,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T13:00:00.0000000Z",
+            "metricName": "performanceCounters/processIOBytesPerSecond",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 13.7350830893169,
+            "minimum": 13.7350830893169,
+            "maximum": 13.7350830893169,
+            "average": 13.7350830893169,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T12:59:00.0000000Z",
+            "metricName": "performanceCounters/processCpuPercentage",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 0,
+            "minimum": 0,
+            "maximum": 0,
+            "average": 0,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T13:00:00.0000000Z",
+            "metricName": "performanceCounters/processCpuPercentage",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 1908649984,
+            "minimum": 1908649984,
+            "maximum": 1908649984,
+            "average": 1908649984,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T12:59:00.0000000Z",
+            "metricName": "performanceCounters/memoryAvailableBytes",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 1905635328,
+            "minimum": 1905635328,
+            "maximum": 1905635328,
+            "average": 1905635328,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T13:00:00.0000000Z",
+            "metricName": "performanceCounters/memoryAvailableBytes",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 211750912,
+            "minimum": 211750912,
+            "maximum": 211750912,
+            "average": 211750912,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T12:59:00.0000000Z",
+            "metricName": "performanceCounters/processPrivateBytes",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 1,
+            "total": 212045824,
+            "minimum": 212045824,
+            "maximum": 212045824,
+            "average": 212045824,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T13:00:00.0000000Z",
+            "metricName": "performanceCounters/processPrivateBytes",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 69,
+            "total": 69,
+            "average": 1,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T12:58:00.0000000Z",
+            "metricName": "traces/count",
+            "timeGrain": "PT1M"
+        },
+        {
+            "count": 3,
+            "total": 3,
+            "average": 1,
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "time": "2021-01-26T12:59:00.0000000Z",
+            "metricName": "traces/count",
+            "timeGrain": "PT1M"
+        }
+    ]
+}

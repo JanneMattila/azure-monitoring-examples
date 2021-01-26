@@ -1,0 +1,113 @@
+{
+    "records": [
+        {
+            "time": "2021-01-26T12:59:39.4939029Z",
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+            "Type": "AppPerformanceCounters",
+            "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
+            "AppRoleName": "MONITORINGDEMO",
+            "ClientIP": "0.0.0.0",
+            "ClientType": "PC",
+            "IKey": "04...9d",
+            "_BilledSize": 789,
+            "SDKVersion": "af_azwapccore:2.14.0-17971",
+            "Properties": {
+                "ProcessId": "7588",
+                "HostInstanceId": "f1410fdb-6670-41b8-a016-72840d77ee34"
+            },
+            "Name": "% Processor Time",
+            "Category": "Process",
+            "Counter": "% Processor Time",
+            "Instance": "??APP_WIN32_PROC??",
+            "Value": 27.4698012876085
+        },
+        {
+            "time": "2021-01-26T12:59:39.4939285Z",
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+            "Type": "AppPerformanceCounters",
+            "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
+            "AppRoleName": "MONITORINGDEMO",
+            "ClientIP": "0.0.0.0",
+            "ClientType": "PC",
+            "IKey": "04...9d",
+            "_BilledSize": 800,
+            "SDKVersion": "af_azwapccore:2.14.0-17971",
+            "Properties": {
+                "ProcessId": "7588",
+                "HostInstanceId": "f1410fdb-6670-41b8-a016-72840d77ee34"
+            },
+            "Name": "% Processor Time Normalized",
+            "Category": "Process",
+            "Counter": "% Processor Time Normalized",
+            "Instance": "??APP_WIN32_PROC??",
+            "Value": 13.7350830893169
+        },
+        {
+            "time": "2021-01-26T12:59:39.4939376Z",
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+            "Type": "AppPerformanceCounters",
+            "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
+            "AppRoleName": "MONITORINGDEMO",
+            "ClientIP": "0.0.0.0",
+            "ClientType": "PC",
+            "IKey": "04...9d",
+            "_BilledSize": 759,
+            "SDKVersion": "af_azwapccore:2.14.0-17971",
+            "Properties": {
+                "ProcessId": "7588",
+                "HostInstanceId": "f1410fdb-6670-41b8-a016-72840d77ee34"
+            },
+            "Name": "Private Bytes",
+            "Category": "Process",
+            "Counter": "Private Bytes",
+            "Instance": "??APP_WIN32_PROC??",
+            "Value": 211750912
+        },
+        {
+            "time": "2021-01-26T12:59:39.4939457Z",
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+            "Type": "AppPerformanceCounters",
+            "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
+            "AppRoleName": "MONITORINGDEMO",
+            "ClientIP": "0.0.0.0",
+            "ClientType": "PC",
+            "IKey": "04...9d",
+            "_BilledSize": 700,
+            "SDKVersion": "af_azwapccore:2.14.0-17971",
+            "Properties": {
+                "ProcessId": "7588",
+                "HostInstanceId": "f1410fdb-6670-41b8-a016-72840d77ee34"
+            },
+            "Name": "Available Bytes",
+            "Category": "Memory",
+            "Counter": "Available Bytes",
+            "Value": 1908649984
+        },
+        {
+            "time": "2021-01-26T12:59:39.4939541Z",
+            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORINGDEMO",
+            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+            "Type": "AppPerformanceCounters",
+            "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
+            "AppRoleName": "MONITORINGDEMO",
+            "ClientIP": "0.0.0.0",
+            "ClientType": "PC",
+            "IKey": "04...9d",
+            "_BilledSize": 748,
+            "SDKVersion": "af_azwapccore:2.14.0-17971",
+            "Properties": {
+                "ProcessId": "7588",
+                "HostInstanceId": "f1410fdb-6670-41b8-a016-72840d77ee34"
+            },
+            "Name": "IO Data Bytes/sec",
+            "Category": "Process",
+            "Counter": "IO Data Bytes/sec",
+            "Instance": "??APP_WIN32_PROC??",
+            "Value": 4222
+        }
+    ]
+}
