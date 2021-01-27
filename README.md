@@ -68,7 +68,7 @@ AppExceptions
 - Can be managed in scale using Azure Policies
   - [Enterprise-Scale and Azure Policy for policy-driven governance](https://techcommunity.microsoft.com/t5/azure-architecture-blog/enterprise-scale-and-azure-policy-for-policy-driven-governance/ba-p/1614060)
   - [Deploy Enterprise-Scale Azure policies](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference)
-- Some resources support resources specific schema [](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics#azure-diagnostics-mode-or-resource-specific-mode)
+- Some resources support [resources specific](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/azurediagnostics#azure-diagnostics-mode-or-resource-specific-mode) schema
 - Application Insights can use workspace for data storage (don't need to use diagnostic setting in that case)
 - Each 5-min interval based query alert costs $1.50 per month
   - Try to create `general` query alerts (_"Find Logic Apps Errors"_) vs. 
