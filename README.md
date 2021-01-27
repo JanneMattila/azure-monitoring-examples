@@ -74,6 +74,16 @@ AppExceptions
   - Try to create `general` query alerts (_"Find Logic Apps Errors"_) vs. 
     very specific query which get multiplied by customer by product by _xyz_ (causing _n_ number of queries)
 
+### Other scenario(s)
+
+<img src="https://user-images.githubusercontent.com/2357647/106034836-149f7c00-60dc-11eb-9bf8-f4d416ba8abb.png" width="70%" height="70%" alt="App Insights Log Alert" />
+
+<img src="https://user-images.githubusercontent.com/2357647/106034472-9fcc4200-60db-11eb-9642-f4c3fe5bc556.png" width="70%" height="70%" alt="App Insights Metric Alert" />
+
+<img src="https://user-images.githubusercontent.com/2357647/106034592-c25e5b00-60db-11eb-8f94-a9cabcd148cf.png" width="70%" height="70%" alt="Diagnostic Settings and Event Hub Custom Forwarder" />
+
+<img src="https://user-images.githubusercontent.com/2357647/106034681-e0c45680-60db-11eb-8b8c-2a789da818b8.png" width="70%" height="70%" alt="Custom diagnostics with Event Hub Custom Forwarder" />
+
 ## Additinal notes
 
 ### Pricing
