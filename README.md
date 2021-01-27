@@ -76,6 +76,8 @@ AppExceptions
 
 ### Other scenario(s)
 
+:construction: This content is **work in progress**.
+
 <img src="https://user-images.githubusercontent.com/2357647/106034836-149f7c00-60dc-11eb-9bf8-f4d416ba8abb.png" width="70%" height="70%" alt="App Insights Log Alert" />
 
 <img src="https://user-images.githubusercontent.com/2357647/106034472-9fcc4200-60db-11eb-9642-f4c3fe5bc556.png" width="70%" height="70%" alt="App Insights Metric Alert" />
