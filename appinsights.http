@@ -1,0 +1,48 @@
+@endpoint = https://dc.services.visualstudio.com/v2/track
+@ikey = your_intrumentation_key_from_azure_portal
+@roleInstance = myserver
+@sdk = mydemo:1.0.0
+
+### Post single exception with properties:
+# Matching .NET code:
+#   var ex = new ContosoRetailBackendException(
+#    "Retail SBT Backend is not responding. " +
+#    "Please follow these instructions next: " +
+#    "https://bit.ly/ContosoITRetailSBTBackend");
+#   client.TrackException(ex, new Dictionary<string, string>()
+#   {
+#     { "DataKey", "ABCDEF" },
+#     { "NodeKey", "1234567890" }
+#   });
+POST {{endpoint}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Exception",
+  "time": "{{$datetime iso8601}}",
+  "iKey": "{{ikey}}",
+  "tags": {
+    "ai.cloud.roleInstance": "{{roleInstance}}",
+    "ai.internal.sdkVersion": "{{sdk}}"
+  },
+  "data": {
+    "baseType": "ExceptionData",
+    "baseData": {
+      "ver":2,
+      "exceptions":
+      [
+        {
+          "id": 9799115,
+          "outerId":0,
+          "typeName": "ContosoRetailBackendException",
+          "message": "Retail SBT Backend is not responding. Please follow these instructions next: https://bit.ly/ContosoITRetailSBTBackend",
+          "hasFullStack": true
+        }
+      ],
+      "properties": {
+        "DataKey": "ABCDEF",
+        "NodeKey": "1234567890"
+      }
+    }
+  }
+}
