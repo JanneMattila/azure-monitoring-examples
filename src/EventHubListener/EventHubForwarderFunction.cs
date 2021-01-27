@@ -16,10 +16,22 @@ namespace EventHubListener
         private static readonly HttpClient _client = new HttpClient();
         private static readonly string _address = Environment.GetEnvironmentVariable("FORWARD_ADDRESS");
 
+        /*
+         * Note: 
+         * You need to handle error scenarios much better, 
+         * so that you don't drop any events. 
+         * 
+         * Example: Azure Storage Queue and dead lettering (64kB message size limit!)
+         * https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/serverless/event-processing
+         * Example in GitHub:
+         * https://github.com/mspnp/serverless-reference-implementation/blob/v0.1.0/src/DroneTelemetry/DroneTelemetryFunctionApp/RawTelemetryFunction.cs#L32
+         * 
+         * Alternative: Use Azure Storage Blob etc.
+         */
         [FunctionName("EventHubForwarderFunction")]
         public static async Task Run(
             [EventHubTrigger("forwarder", Connection = "EventHubConnectionAppSetting", ConsumerGroup = "forwarder")]
-            EventData[] events, 
+            EventData[] events,
             ILogger log)
         {
             var exceptions = new List<Exception>();
@@ -28,7 +40,7 @@ namespace EventHubListener
                 try
                 {
                     var messageBody = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
-                    log.LogInformation($"C# Event Hub trigger function processed a message: {messageBody}");
+                    log.LogInformation($"Forwarder function processing event: {messageBody}");
                     using var request = new HttpRequestMessage(HttpMethod.Post, _address)
                     {
                         Content = new StringContent(messageBody, Encoding.UTF8, MediaTypeNames.Application.Json)

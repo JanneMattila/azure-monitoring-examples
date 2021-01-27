@@ -2,12 +2,23 @@
 
 Few Azure Monitoring Examples
 
+https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-ingestion-time
+
+https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-troubleshoot-log#alert-triggered-by-partial-data
+
+
 ## Additinal notes
 
 If you're configuring diagnostic settings for your resource, you might get following error:
 
 ```
-Failed to update diagnostics for 'monitoringdemo'.{"code":"Conflict","message":"Data sink '/subscriptions/<subsriptionid>/resourceGroups/<resourcegroup>/providers/Microsoft.EventHub/namespaces/<eventhub>/authorizationrules/RootManageSharedAccessKey' is already used in diagnostic setting 'monitoring' for category 'AppExceptions'. Data sinks can't be reused in different settings on the same category for the same resource."}.
+Failed to update diagnostics for 'monitoringdemo'.
+{
+  "code":"Conflict",
+  "message": "Data sink '/subscriptions/<id>/resourceGroups/<rg>/providers/Microsoft.EventHub/namespaces/<ns>/authorizationrules/RootManageSharedAccessKey'
+  is already used in diagnostic setting 'monitoring' for category 'AppExceptions'.
+  Data sinks can't be reused in different settings on the same category for the same resource."
+}.
 ```
 
 It means that you cannot create multiple diagnostic settings with same category targeting same destination.

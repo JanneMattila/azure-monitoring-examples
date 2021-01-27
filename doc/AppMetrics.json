@@ -1,36 +1,36 @@
 {
-    "records": [
-        {
-            "time": "2021-01-26T13:14:58.2947515Z",
-            "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORING",
-            "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
-            "Type": "AppMetrics",
-            "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
-            "AppRoleName": "monitoringdemo",
-            "ClientIP": "0.0.0.0",
-            "ClientType": "PC",
-            "IKey": "04...9d",
-            "_BilledSize": 1060,
-            "SDKVersion": "hbnetc:2.14.0-17971",
-            "SyntheticSource": "HeartbeatState",
-            "Properties": {
-                "appSrv_SiteName": "monitoringdemo",
-                "ProcessId": "7588",
-                "baseSdkTargetFramework": "netstandard2.0",
-                "appSrv_SlotName": "Production",
-                "processSessionId": "74aed563-70f4-408d-a569-db508bd6714b",
-                "osType": "WINDOWS",
-                "appSrv_wsOwner": "13...9+rg-monitoring-demo-NorthEuropewebspace",
-                "appSrv_wsHost": "monitoringdemo.azurewebsites.net",
-                "appSrv_wsStamp": "waws-prod-db3-179",
-                "appSrv_ResourceGroup": "rg-monitoring-demo",
-                "runtimeFramework": ".NET Core 3.1.8"
-            },
-            "Name": "HeartbeatState",
-            "Sum": 0,
-            "Min": 0,
-            "Max": 0,
-            "ItemCount": 1
-        }
-    ]
+  "records": [
+    {
+      "time": "2021-01-26T13:14:58.2947515Z",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.INSIGHTS/COMPONENTS/MONITORING",
+      "ResourceGUID": "46798a95-1528-4936-a324-8e9c39bb2e60",
+      "Type": "AppMetrics",
+      "AppRoleInstance": "17d1ee89c8fd758e8ca3eeada663d88cfd79d14029db3c23c5093925d18f8e75",
+      "AppRoleName": "monitoringdemo",
+      "ClientIP": "0.0.0.0",
+      "ClientType": "PC",
+      "IKey": "04...9d",
+      "_BilledSize": 1060,
+      "SDKVersion": "hbnetc:2.14.0-17971",
+      "SyntheticSource": "HeartbeatState",
+      "Properties": {
+        "appSrv_SiteName": "monitoringdemo",
+        "ProcessId": "7588",
+        "baseSdkTargetFramework": "netstandard2.0",
+        "appSrv_SlotName": "Production",
+        "processSessionId": "74aed563-70f4-408d-a569-db508bd6714b",
+        "osType": "WINDOWS",
+        "appSrv_wsOwner": "13...9+rg-monitoring-demo-NorthEuropewebspace",
+        "appSrv_wsHost": "monitoringdemo.azurewebsites.net",
+        "appSrv_wsStamp": "waws-prod-db3-179",
+        "appSrv_ResourceGroup": "rg-monitoring-demo",
+        "runtimeFramework": ".NET Core 3.1.8"
+      },
+      "Name": "HeartbeatState",
+      "Sum": 0,
+      "Min": 0,
+      "Max": 0,
+      "ItemCount": 1
+    }
+  ]
 }

@@ -1,0 +1,292 @@
+{
+  "records": [
+    {
+      "time": "2021-01-26T18:40:05.7323046Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07",
+      "category": "WorkflowRuntime",
+      "level": "Error",
+      "operationName": "Microsoft.Logic/workflows/workflowRunCompleted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.4334377Z",
+        "endTime": "2021-01-26T18:40:05.726823Z",
+        "status": "Failed",
+        "code": "ActionFailed",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "originRunId": "08585899204800446016009909995CU07",
+          "location": "northeurope"
+        },
+        "correlation": {
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        },
+        "error": {
+          "code": "ActionFailed",
+          "message": "An action failed. No dependent actions succeeded."
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:40:05.5494535Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07/ACTIONS/INITIALIZE_VARIABLE",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowActionStarted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.539325Z",
+        "status": "Running",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "location": "northeurope",
+          "actionName": "Initialize_variable"
+        },
+        "correlation": {
+          "actionTrackingId": "07c922fd-f0bb-436e-bf6b-edf0c10ee406",
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:40:05.6044527Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07/ACTIONS/INITIALIZE_VARIABLE",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowActionCompleted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.539325Z",
+        "endTime": "2021-01-26T18:40:05.570576Z",
+        "status": "Succeeded",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "location": "northeurope",
+          "actionName": "Initialize_variable"
+        },
+        "correlation": {
+          "actionTrackingId": "07c922fd-f0bb-436e-bf6b-edf0c10ee406",
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:40:05.6438559Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07/ACTIONS/SET_VARIABLE",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowActionStarted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.6330728Z",
+        "status": "Running",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "location": "northeurope",
+          "actionName": "Set_variable"
+        },
+        "correlation": {
+          "actionTrackingId": "a2a893ae-87cc-4bc3-89aa-f24caed28338",
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:40:05.7008411Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07/ACTIONS/SET_VARIABLE",
+      "category": "WorkflowRuntime",
+      "level": "Error",
+      "operationName": "Microsoft.Logic/workflows/workflowActionCompleted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.6330728Z",
+        "endTime": "2021-01-26T18:40:05.6799482Z",
+        "status": "Failed",
+        "code": "TrackedPropertiesEvaluationFailed",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "location": "northeurope",
+          "actionName": "Set_variable"
+        },
+        "correlation": {
+          "actionTrackingId": "a2a893ae-87cc-4bc3-89aa-f24caed28338",
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        },
+        "error": {
+          "error": {
+            "code": "TrackedPropertiesEvaluationFailed",
+            "message": "Failed to evaluate the tracked properties for action 'Set_variable'. Error details: 'The template function 'variables' is not expected at this location.'."
+          }
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:40:05.707998Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07/ACTIONS/RESPONSE",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowActionStarted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.6955734Z",
+        "status": "Running",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "location": "northeurope",
+          "actionName": "Response"
+        },
+        "correlation": {
+          "actionTrackingId": "05eaf0d4-2c87-4e4b-8f6f-7397aaf3eda0",
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:40:05.7177252Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899204800446016009909995CU07/ACTIONS/RESPONSE",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowActionCompleted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:40:05.6955734Z",
+        "endTime": "2021-01-26T18:40:05.6955734Z",
+        "status": "Skipped",
+        "code": "ActionSkipped",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899204800446016009909995CU07",
+          "location": "northeurope",
+          "actionName": "Response"
+        },
+        "correlation": {
+          "actionTrackingId": "05eaf0d4-2c87-4e4b-8f6f-7397aaf3eda0",
+          "clientTrackingId": "08585899204800446016009909995CU07"
+        },
+        "error": {
+          "code": "ActionConditionFailed",
+          "message": "The execution of template action 'Response' is skipped: the 'runAfter' condition for action 'Set_variable' is not satisfied. Expected status values 'Succeeded' and actual value 'Failed'."
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:37:48.9417113Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS//TRIGGERS/REQUEST",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowTriggerStarted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:37:48.9086558Z",
+        "status": "Succeeded",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899206165650090886819791CU12",
+          "location": "northeurope",
+          "triggerName": "request"
+        },
+        "correlation": {
+          "clientTrackingId": "08585899206165650090886819791CU12"
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:37:48.9529819Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899206165650090886819791CU12/TRIGGERS/REQUEST",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowTriggerCompleted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:37:48.9086558Z",
+        "endTime": "2021-01-26T18:37:48.9399222Z",
+        "status": "Succeeded",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899206165650090886819791CU12",
+          "location": "northeurope",
+          "triggerName": "request"
+        },
+        "correlation": {
+          "clientTrackingId": "08585899206165650090886819791CU12"
+        }
+      }
+    },
+    {
+      "time": "2021-01-26T18:37:48.9336279Z",
+      "workflowId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1",
+      "resourceId": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1/RUNS/08585899206165650090886819791CU12",
+      "category": "WorkflowRuntime",
+      "level": "Information",
+      "operationName": "Microsoft.Logic/workflows/workflowRunStarted",
+      "properties": {
+        "$schema": "2016-06-01",
+        "startTime": "2021-01-26T18:37:48.9130058Z",
+        "status": "Running",
+        "tags": {},
+        "resource": {
+          "subscriptionId": "13...A9",
+          "resourceGroupName": "rg-monitoring-demo",
+          "workflowId": "e4ff82d03c034032a6356a0404c53bb5",
+          "workflowName": "integration1",
+          "runId": "08585899206165650090886819791CU12",
+          "originRunId": "08585899206165650090886819791CU12",
+          "location": "northeurope"
+        },
+        "correlation": {
+          "clientTrackingId": "08585899206165650090886819791CU12"
+        }
+      }
+    }
+  ]
+}
