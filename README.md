@@ -88,7 +88,7 @@ TBD
 #### What
 
 Collect data from Azure resources with minimal effort
-and get alerted in specific conditions.
+and get alerted in specific conditions
 
 #### How
 
@@ -199,6 +199,11 @@ Here is example:
   [src/EventHubListener/EventHubForwarderFunction.cs](src/EventHubListener/EventHubForwarderFunction.cs)
 - Full flexibility and control
 - Diagnostic settings can be be managed in scale using Azure Policies
+- You can use `Scenario 1` for large scale monitoring solution
+  and extend that with this more custom based solution for
+  _only selected events_ to optimize certain automation
+  scenarios
+  - You can have up to 5 diagnostic settings applied to Azure resource
 
 ### Scenario 4
 
