@@ -41,9 +41,45 @@ When planning and implementing your monitoring scenarios you typically follow th
 2. Find correct data
 3. Create alert from data
 4. Create action from alert
-5. _Optional_ Visualize
+5. Visualize
 6. Test
 7. Automate
+
+#### 1. Enable data collection
+
+> What you can't see, you can't measure. What you can't measure, you can't improve.
+
+Quote from [Enterprise-scale architecture operational design principles / Management and monitoring](https://docs.microsoft.com/en-us/learn/modules/enterprise-scale-operations/2-management-monitoring)
+
+TBD
+
+#### 2. Find correct data
+
+TBD
+
+#### 3. Create alert from data
+
+TBD
+
+#### 3. Create alert from data
+
+TBD
+
+#### 4. Create action from alert
+
+TBD
+
+#### 5. Visualize
+
+TBD
+
+#### 6. Test
+
+TBD
+
+#### 7. Automate
+
+TBD
 
 ## Scenarios
 
