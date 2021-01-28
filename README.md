@@ -8,7 +8,16 @@ so that you can prepare you Azure components
 to match those requirements. Here are few thoughts
 how to approach that planning.
 
-## Scenarios
+## Planning
+
+Typical monitoring solution is some form of combination of
+different scenarios listed below. Therefore, it makes
+sense to look them from scenario point of view.
+
+If you have hard time planning your overall solution
+from technical components then you can try to use
+[event modeling](https://eventmodeling.org/posts/what-is-event-modeling/)
+for help.
 
 ### Implementation steps
 
@@ -21,6 +30,8 @@ When planning and implementing your monitoring scenarios you typically follow th
 5. _Optional_ Visualize
 6. Test
 7. Automate
+
+## Scenarios
 
 ### Scenario 1
 
@@ -137,11 +148,32 @@ Here is example:
 - Full flexibility and control
 - Diagnostic settings can be be managed in scale using Azure Policies
 
-### Other scenario(s)
+### Scenario 4
 
-:construction: This content is **work in progress**.
+#### What
+
+Minimize latency from event to action
+
+#### How
+
+- Create Event Hub and Azure Functions resources
+- Azure Function listens incoming data from Event Hub
+- Deploy custom processing logic to Azure Functions
+- Use custom endpoint directly from you applications
+
+Here is example:
 
 <img src="https://user-images.githubusercontent.com/2357647/106034681-e0c45680-60db-11eb-8b8c-2a789da818b8.png" width="70%" height="70%" alt="Custom diagnostics with Event Hub Custom Forwarder" />
+
+#### Notes
+
+- Heavy on custom development
+- Very low latency
+- Makes sense if action is automated
+  - E.g. Call API when certain event or metric threshold is met
+  - Hard to justify, if action causes humans to do corrective actions
+- You need to create reusable code do this in multiple applications
+  - E.g. Nuget package for your .NET apps
 
 ## Additinal notes
 
