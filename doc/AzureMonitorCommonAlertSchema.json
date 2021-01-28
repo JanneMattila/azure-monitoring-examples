@@ -1,0 +1,48 @@
+{
+  "schemaId": "azureMonitorCommonAlertSchema",
+  "data": {
+    "essentials": {
+      "alertId": "/subscriptions/13...A9/providers/Microsoft.AlertsManagement/alerts/cdf3de05-b896-4b22-9437-db4d298ce82a",
+      "alertRule": "metric-webhook-runs-failed",
+      "severity": "Sev3",
+      "signalType": "Metric",
+      "monitorCondition": "Resolved",
+      "monitoringService": "Platform",
+      "alertTargetIDs": [
+        "/subscriptions/13...A9/resourcegroups/rg-monitoring-demo/providers/microsoft.logic/workflows/integration1"
+      ],
+      "originAlertId": "13...A9_rg-monitoring-demo_microsoft.insights_metricAlerts_metric-webhook-runs-failed_317994454",
+      "firedDateTime": "2021-01-28T10:20:29.5287307Z",
+      "resolvedDateTime": "2021-01-28T10:23:28.2093816Z",
+      "description": "metric-webhook-runs-failed",
+      "essentialsVersion": "1.0",
+      "alertContextVersion": "1.0"
+    },
+    "alertContext": {
+      "properties": null,
+      "conditionType": "SingleResourceMultipleMetricCriteria",
+      "condition": {
+        "windowSize": "PT1M",
+        "allOf": [
+          {
+            "metricName": "RunsFailed",
+            "metricNamespace": "Microsoft.Logic/workflows",
+            "operator": "GreaterThan",
+            "threshold": "0",
+            "timeAggregation": "Total",
+            "dimensions": [
+              {
+                "name": "ResourceId",
+                "value": "/SUBSCRIPTIONS/13...A9/RESOURCEGROUPS/RG-MONITORING-DEMO/PROVIDERS/MICROSOFT.LOGIC/WORKFLOWS/INTEGRATION1"
+              }
+            ],
+            "metricValue": 0.0,
+            "webTestName": null
+          }
+        ],
+        "windowStartTime": "2021-01-28T10:19:16.561Z",
+        "windowEndTime": "2021-01-28T10:20:16.561Z"
+      }
+    }
+  }
+}

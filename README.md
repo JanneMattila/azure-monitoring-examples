@@ -106,16 +106,40 @@ in SQL Database:
 
 #### Notes
 
+- Alerts have [state](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview#manage-alerts)
+and platform automatically changes the state from `Fired` to `Resolved` when condition clears
+  - You get notified when state changes to `Resolved`
 - Limited filtering available for metrics (dimensions of metrics)
   - Example: You cannot create alert only for specific exceptions in App Insights using metric alerts
 - Metric based alert costs $0.10 per monitored signal per month
+- Use [common alert schema](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-common-schema)
+
+### Scenario 3
+
+#### What
+
+Enable custom processing based on Azure resource metric or log data
+
+#### How
+
+- Create Event Hub and Azure Functions resources
+- Azure Function listens incoming data from Event Hub
+- Deploy custom processing logic to Azure Functions
+- Set `Diagnostic settings` in Azure resources to send data to your Event Hub
+
+Here is example:
+
+<img src="https://user-images.githubusercontent.com/2357647/106034592-c25e5b00-60db-11eb-8f94-a9cabcd148cf.png" width="70%" height="70%" alt="Diagnostic Settings and Event Hub Custom Forwarder" />
+
+#### Notes
+
+- Requires custom development
+- Full flexibility and control
+- Diagnostic settings can be be managed in scale using Azure Policies
 
 ### Other scenario(s)
 
 :construction: This content is **work in progress**.
-
-
-<img src="https://user-images.githubusercontent.com/2357647/106034592-c25e5b00-60db-11eb-8f94-a9cabcd148cf.png" width="70%" height="70%" alt="Diagnostic Settings and Event Hub Custom Forwarder" />
 
 <img src="https://user-images.githubusercontent.com/2357647/106034681-e0c45680-60db-11eb-8b8c-2a789da818b8.png" width="70%" height="70%" alt="Custom diagnostics with Event Hub Custom Forwarder" />
 
