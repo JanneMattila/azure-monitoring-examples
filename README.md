@@ -234,6 +234,14 @@ Here is example:
 
 ## Additinal notes
 
+### Blogs, articles and videos on the topic
+
+[Azure Master Class Part 9 - Monitoring and Security](https://www.youtube.com/watch?v=hTS8jXEX_88)
+
+[End-to-end correlation across Logic Apps](https://yourazurecoach.com/2018/08/05/end-to-end-correlation-across-logic-apps/)
+
+[Logic Apps and 'x-ms-client-tracking-id'](https://docs.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps-log-analytics#azure-monitor-diagnostics-events)
+
 ### Pricing
 
 [Azure Monitor Pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/)
