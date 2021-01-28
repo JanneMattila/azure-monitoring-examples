@@ -145,6 +145,8 @@ Here is example:
 #### Notes
 
 - Requires custom development
+  - Simplified example about Event Hub Forward
+  [src/EventHubListener/EventHubForwarderFunction.cs](src/EventHubListener/EventHubForwarderFunction.cs)
 - Full flexibility and control
 - Diagnostic settings can be be managed in scale using Azure Policies
 
