@@ -74,13 +74,46 @@ AppExceptions
   - Try to create `general` query alerts (_"Find Logic Apps Errors"_) vs. 
     very specific query which get multiplied by customer by product by _xyz_ (causing _n_ number of queries)
 
+If you have single application already using Application Insights, then you can have similar query based alert in that:
+
+<img src="https://user-images.githubusercontent.com/2357647/106034836-149f7c00-60dc-11eb-9bf8-f4d416ba8abb.png" width="70%" height="70%" alt="App Insights Log Alert" />
+
+### Scenario 2
+
+#### What
+
+Create metric based alerts for Azure resources
+
+#### How
+
+- Find Azure resource [metric](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-supported) that you want to monitor
+- Create metric based alert to that resource
+
+Here are few examples:
+
+Failed runs in Logic Apps resource:
+
+<img src="https://user-images.githubusercontent.com/2357647/106115829-d9dc2900-6159-11eb-9c06-0b3c1a4ac810.png" width="70%" height="70%" alt="App Insights Metric Alert" />
+
+Exception count in Application Insights resource:
+
+<img src="https://user-images.githubusercontent.com/2357647/106115622-a4cfd680-6159-11eb-8a66-4399d057a6b1.png" width="70%" height="70%" alt="App Insights Metric Alert" />
+
+DTU ([Database transaction unit](https://docs.microsoft.com/en-us/azure/azure-sql/database/purchasing-models)) usage is high
+in SQL Database:
+
+<img src="https://user-images.githubusercontent.com/2357647/106122675-a30a1100-6161-11eb-9084-9fef293ea3fd.png" width="70%" height="70%" alt="App Insights Metric Alert" />
+
+#### Notes
+
+- Limited filtering available for metrics (dimensions of metrics)
+  - Example: You cannot create alert only for specific exceptions in App Insights using metric alerts
+- Metric based alert costs $0.10 per monitored signal per month
+
 ### Other scenario(s)
 
 :construction: This content is **work in progress**.
 
-<img src="https://user-images.githubusercontent.com/2357647/106034836-149f7c00-60dc-11eb-9bf8-f4d416ba8abb.png" width="70%" height="70%" alt="App Insights Log Alert" />
-
-<img src="https://user-images.githubusercontent.com/2357647/106034472-9fcc4200-60db-11eb-9642-f4c3fe5bc556.png" width="70%" height="70%" alt="App Insights Metric Alert" />
 
 <img src="https://user-images.githubusercontent.com/2357647/106034592-c25e5b00-60db-11eb-8f94-a9cabcd148cf.png" width="70%" height="70%" alt="Diagnostic Settings and Event Hub Custom Forwarder" />
 
