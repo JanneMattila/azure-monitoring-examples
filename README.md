@@ -14,6 +14,20 @@ Typical monitoring solution is some form of combination of
 different scenarios listed below. Therefore, it makes
 sense to look them from scenario point of view.
 
+You should know your requirements because ultimately
+they impact your monitoring solution.
+
+_Example:_ You're required to store certain application events
+for 5 years -> You have to think long-term storage such as
+Azure Storage account for storing those events.
+Log Analytics Workspace maximum data retension is
+[2 years](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) (730 days).
+
+_Example:_ You need to provide chart about certain Azure
+resource metric data for last 8 months -> You have to
+store this metric data to logs since metric data is only available for
+[3 months](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform-metrics#retention-of-metrics) (93 days). 
+
 If you have hard time planning your overall solution
 from technical components then you can try to use
 [event modeling](https://eventmodeling.org/posts/what-is-event-modeling/)
