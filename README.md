@@ -129,7 +129,7 @@ Enable custom processing based on Azure resource metric or log data
 
 Here is example:
 
-<img src="https://user-images.githubusercontent.com/2357647/106034592-c25e5b00-60db-11eb-8f94-a9cabcd148cf.png" width="70%" height="70%" alt="Diagnostic Settings and Event Hub Custom Forwarder" />
+<img src="https://user-images.githubusercontent.com/2357647/106141949-837ee280-6179-11eb-8388-85815991ec8d.png" width="70%" height="70%" alt="Diagnostic Settings and Event Hub Custom Forwarder" />
 
 #### Notes
 
