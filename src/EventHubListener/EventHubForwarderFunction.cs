@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -41,11 +40,7 @@ namespace EventHubListener
                 {
                     var messageBody = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
                     log.LogInformation($"Forwarder function processing event: {messageBody}");
-                    using var request = new HttpRequestMessage(HttpMethod.Post, _address)
-                    {
-                        Content = new StringContent(messageBody, Encoding.UTF8, MediaTypeNames.Application.Json)
-                    };
-                    await _client.SendAsync(request);
+                    await _client.PostAsJsonAsync(_address, messageBody);
                 }
                 catch (Exception e)
                 {

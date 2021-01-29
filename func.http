@@ -1,0 +1,30 @@
+@func = http://localhost:7071
+
+### Post example payload
+POST {{func}}/api/Correlation HTTP/1.1
+Content-type: application/json
+User-Agent: azure-logic-apps/1.0 (workflow e8a97eaa59164718a8858ec7dbdc3f7c; version 08585896951303492118)
+x-ms-workflow-id: e8a97eaa59164718a8858ec7dbdc3f7c
+x-ms-workflow-version: 08585896951303492118
+x-ms-workflow-name: integration1
+x-ms-workflow-system-id: /locations/northeurope/scaleunits/prod-03/workflows/e8a97eaa59164718a8858ec7dbdc3f7c
+x-ms-workflow-run-id: 08585896950846177306634438317CU47
+x-ms-workflow-run-tracking-id: 1d94cb2f-5e08-4709-b8ee-7c3a072d8ae7
+x-ms-workflow-operation-name: HTTP
+x-ms-execution-location: northeurope
+x-ms-workflow-subscription-id: 776b97d3-919d-46dd-8ca0-77f7b5e1836b
+x-ms-workflow-resourcegroup-name: rg-monitoring-demo
+x-ms-tracking-id: 13c203f3-e9f7-4d16-bb1e-186ce9565890
+x-ms-correlation-id: 13c203f3-e9f7-4d16-bb1e-186ce9565890
+x-ms-client-request-id: 13c203f3-e9f7-4d16-bb1e-186ce9565890
+x-ms-client-tracking-id: 08585896950846177306634438317CU47
+x-ms-action-tracking-id: 90ae06c7-cdd0-4a4f-9126-a8ee08149cef
+x-ms-activity-vector: IN.0N.IN.08
+
+{
+  "id": 1,
+  "name": "Doe",
+  "address": {
+    "postalCode": "11111"
+  }
+}

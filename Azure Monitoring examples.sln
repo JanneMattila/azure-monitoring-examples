@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{7B2AAD5E-368D-44EC-9215-418C718128CD}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		apim.http = apim.http
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -27,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "release", "release", "{EC9C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{A4DCAEE4-6898-4436-971B-50D3255D0C10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHubListener", "src\EventHubListener\EventHubListener.csproj", "{953AC341-00F2-430A-ABD5-991EF67A601B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHubListener", "src\EventHubListener\EventHubListener.csproj", "{953AC341-00F2-430A-ABD5-991EF67A601B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
