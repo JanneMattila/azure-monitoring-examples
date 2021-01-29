@@ -343,7 +343,7 @@ Logic App or to Azure Function.
 
 Example architecture:
 
-<img src="https://user-images.githubusercontent.com/2357647/106308223-121e5d00-6269-11eb-9093-ad63c301d03a.png" width="70%" height="70%" alt="Correlation example architecture" />
+<img src="https://user-images.githubusercontent.com/2357647/106308884-067f6600-626a-11eb-8475-338661bcbe6b.png" width="80%" height="80%" alt="Correlation example architecture" />
 
 Logic Apps workflow `wf1` calls another workflow `wf2` which
 in turn calls Azure Function named `correlation`.
