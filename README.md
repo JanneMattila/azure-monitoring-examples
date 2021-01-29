@@ -286,3 +286,48 @@ Following is **allowed**:
 
 - `AppEvents` and `AppExceptions` to Event Hub namespace `ns` and event hub `eh1` using `eh1Policy`
 - `AppDependencies` and `AppExceptions` to Event Hub `ns` and event hub`eh2` using `eh2Policy`
+
+### Logic Apps & clientTrackingId
+
+You can change your `clientTrackingId` (Correlation id)
+in your Logic Apps for example based on agreed header name:
+
+```json
+"triggers": {
+  "request": {
+    "conditions": [
+       {
+         "expression": "@not(empty(triggerOutputs()?['headers']?['your_correlation_header']))"
+       }
+    ],
+    "correlation": {
+      "clientTrackingId": "@{triggerOutputs()['headers']['your_correlation_header']}"
+    },
+    "inputs": {
+      "method": "GET",
+      "schema": {}
+    },
+    "kind": "Http",
+    "type": "Request"
+  }
+}
+```
+
+Example usage:
+
+```json
+"HTTP": {
+  "inputs": {
+    "body": {
+      "text": "Your headers for correlation identifier"
+    },
+    "headers": {
+      "your_correlation_header": "@{trigger().clientTrackingId}",
+    },
+    "method": "POST",
+    "uri": "https://api.contoso.com/api/echo"
+  },
+  "runAfter": {},
+  "type": "Http"
+}
+```
