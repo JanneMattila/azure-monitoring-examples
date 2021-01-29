@@ -1,6 +1,6 @@
 @func = http://localhost:7071
 
-### Post example payload
+### Logic Apps Post example
 POST {{func}}/api/Correlation HTTP/1.1
 Content-type: application/json
 User-Agent: azure-logic-apps/1.0 (workflow e8a97eaa59164718a8858ec7dbdc3f7c; version 08585896951303492118)
@@ -20,6 +20,35 @@ x-ms-client-request-id: 13c203f3-e9f7-4d16-bb1e-186ce9565890
 x-ms-client-tracking-id: 08585896950846177306634438317CU47
 x-ms-action-tracking-id: 90ae06c7-cdd0-4a4f-9126-a8ee08149cef
 x-ms-activity-vector: IN.0N.IN.08
+
+{
+  "id": 1,
+  "name": "Doe",
+  "address": {
+    "postalCode": "11111"
+  }
+}
+
+### Logic Apps Anywhere Post Example
+POST {{func}}/api/Correlation HTTP/1.1
+Content-type: application/json
+User-Agent: azure-logic-apps/1.0 (workflow befb9a25c45d4e2ca342229439000638; version 08585896761165131880)
+x-ms-workflow-id: befb9a25c45d4e2ca342229439000638
+x-ms-workflow-version: 08585896761165131880
+x-ms-workflow-name: wf1
+x-ms-workflow-system-id: /scaleunits/prod-00/workflows/befb9a25c45d4e2ca342229439000638
+x-ms-workflow-run-id: 08585896761106547433887224540CU00
+x-ms-workflow-run-tracking-id: 18c109bb-aa28-4b29-a348-85fe5b01adb7
+x-ms-workflow-operation-name: HTTP
+x-ms-tracking-id: e184278f-b2fe-442d-a628-2f15b4a61d48
+x-ms-correlation-id: e184278f-b2fe-442d-a628-2f15b4a61d48
+x-ms-client-request-id: e184278f-b2fe-442d-a628-2f15b4a61d48
+x-ms-client-tracking-id: 08585896761106547433887224540CU00
+x-ms-action-tracking-id: 04cc2cf9-c3c9-4a0a-a6b4-f20278db5ddf
+x-ms-activity-vector: IN.04
+Request-Context: appId=cid-v1:54207d4c-e1fd-4588-b712-07e08ce6bc99
+Request-Id: |5468e0e8f3163d46b164f443ed6bc757.1e26be4d86851b4d.
+traceparent: 00-5468e0e8f3163d46b164f443ed6bc757-1e26be4d86851b4d-00
 
 {
   "id": 1,

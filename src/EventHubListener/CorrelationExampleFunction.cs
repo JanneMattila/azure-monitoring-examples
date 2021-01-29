@@ -14,6 +14,9 @@ namespace EventHubListener
 {
     public static class CorrelationExampleFunction
     {
+        public const string TraceParent = "traceparent";
+        public const string ClientTrackingId = "traceparent";
+
         private static readonly HttpClient _client = new HttpClient();
         private static readonly string _address = Environment.GetEnvironmentVariable("FORWARD_ADDRESS");
 
@@ -22,10 +25,18 @@ namespace EventHubListener
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            var parentId = req.Headers["x-ms-client-tracking-id"]; // Logic Apps sends this header
-
             var activity = new Activity("HttpTrigger Request");
-            activity.SetParentId(parentId);
+            if (req.Headers.ContainsKey(TraceParent))
+            {
+                // Logic Apps Anywhere sends this header
+                activity.SetParentId(req.Headers[TraceParent]);
+            }
+            else if (req.Headers.ContainsKey(ClientTrackingId))
+            {
+                // Logic Apps sends this header
+                activity.SetParentId(req.Headers[ClientTrackingId]);
+            }
+
             activity.TraceStateString += "func=Correlation";
             activity.Start();
 
