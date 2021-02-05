@@ -51,19 +51,37 @@ When planning and implementing your monitoring scenarios you typically follow th
 
 Quote from [Enterprise-scale architecture operational design principles / Management and monitoring](https://docs.microsoft.com/en-us/learn/modules/enterprise-scale-operations/2-management-monitoring)
 
-TBD
+Based on your monitoring scenario, you might need to enable data collection in 
+virtual machine (e.g. Windows Performance Counters: `Process(*)\% Processor Time` for monitoring
+processor usage per process) or in different Azure resource levels (e.g. push resource metrics
+to Log Analytics Workspace).
 
 #### 2. Find correct data
 
-TBD
+Then you need to verify that indeed you're
+capable of finding correct data. In some scenarios
+that can be as simple as viewing metrics charts and in
+more advanced scenarios you need to find your data using KQL queries.
+
+_Example_: Find CPU usage for process `CalcService`:
+
+```sql
+Perf
+| where ObjectName == "Process" and
+        CounterName == "% Processor Time" and
+        Computer == "vmname" and InstanceName == "CalcService"
+```
 
 #### 3. Create alert from data
 
-TBD
+When you have found your data which you want use for monitoring,
+you can follow these instruction for implementing your alerts:
+[Overview of alerts in Microsoft Azure](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview)
 
-#### 3. Create alert from data
+Note: You can create rule when you find data
+and similarly if you **don't** find data.
 
-TBD
+_Example_: Find running process and if not found, then trigger alert.
 
 #### 4. Create action from alert
 
