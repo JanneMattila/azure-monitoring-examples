@@ -63,7 +63,8 @@ capable of finding correct data. In some scenarios
 that can be as simple as viewing metrics charts and in
 more advanced scenarios you need to find your data using KQL queries.
 
-_Example_: Find CPU usage for process `CalcService`:
+_Example_: Find CPU usage for process `CalcService`
+(important background Windows Service):
 
 ```sql
 Perf
@@ -85,19 +86,43 @@ _Example_: Find running process and if not found, then trigger alert.
 
 #### 4. Create action from alert
 
-TBD
+Alert cause actions to trigger and for that we use [action groups](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups).
+
+You should plan you action groups so that, you can reach correct target people
+who can actually do something for given alert. 
+
+_Example_: Your app relies on downstream API developed by another team
+inside your company. If that API starts to fail and your application
+is impacted, you can create action group that notifies that another API team directly.
 
 #### 5. Visualize
 
-TBD
+Many times alerts and notifications are enough in order to start
+incident and troubleshooting process. Sometimes it greatly helps
+if you have some additional dashboards, workbooks or any other
+visualizations for clarifying the underlying conditions.
+
+You can look for examples in
+[microsoft/AzureMonitorCommunity](https://github.com/microsoft/AzureMonitorCommunity)
+repository.
 
 #### 6. Test
 
-TBD
+In order to guarantee that query is correctly executed,
+you have to of course test your implementation.
+In above example it would mean that you close down
+specific `CalcService` Windows Service, which
+should cause alert to fire.
 
 #### 7. Automate
 
-TBD
+To deploy these reliably across environments, you have to automate
+the deployment of the different components.
+
+Here are few links for getting started with the automation:
+- [Resource Manager template samples for Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/samples/resource-manager-samples)
+- [Create a metric alert with a Resource Manager template](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric-create-templates)
+- [Bicep example](https://github.com/Azure/bicep/blob/main/docs/examples/301/insights-alertrules-application-insights/main.bicep)
 
 ## Scenarios
 
