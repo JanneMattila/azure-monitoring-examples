@@ -1,0 +1,8 @@
+{
+  "title": "Upgrading",
+  "details": "Your API Management service is being upgraded to a newer version. API Management regularly upgrades all services with the latest features. Your service is down due to currently being upgraded.",
+  "currentHealthStatus": "Available",
+  "previousHealthStatus": "Available",
+  "type": "Downtime",
+  "cause": "PlatformInitiated"
+}
