@@ -348,3 +348,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+WorkspaceConfigToDCRMigrationTool.ps1
+LogAnalyticsAgentUninstallUtilityScript.ps1
+LogAnalyticsAgentExtensionInventory.csv
+DeployDcr/**
+DeployDcr.zip
