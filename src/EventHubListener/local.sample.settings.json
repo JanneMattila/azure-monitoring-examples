@@ -2,9 +2,10 @@
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
-    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
     "BlobStorageAppSetting": "<Storage Account Connection string here>",
     "EventHubConnectionAppSetting": "<Event Hub Connection string here>",
-    "FORWARD_ADDRESS": "<your request bin endpoint here>"
+    "FORWARD_ADDRESS": "<your request bin endpoint here>",
+    "LOCAL_PATH": "C:\\Temp\\EventHubListener\\"
   }
 }
