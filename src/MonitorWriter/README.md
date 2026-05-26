@@ -9,7 +9,7 @@ Sends JSON files from a local folder to a Log Analytics workspace via the Azure 
   "Monitor": {
 	"DataCollectionEndpoint": "https://<your-dce>.<region>.ingest.monitor.azure.com",
 	"DataCollectionRuleId": "dcr-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-	"StreamName": "CustomGitHubAuditLog_CL"
+	"StreamName": "Custom-GitHubAuditLog_CL"
   },
   "SourceFolder": "C:\\temp\\EventHubListener\\unknown"
 }
@@ -42,7 +42,7 @@ Azure Portal → **Monitor** → **Data Collection Endpoints** → **Create**. P
 ### 2. Create the custom table + DCR
 
 1. Log Analytics workspace → **Tables** → **Create** → **New custom log (DCR-based)**.
-2. Name the table (e.g. `CustomGitHubAuditLog` — the portal appends `_CL`).
+2. Name the table (e.g. `GitHubAuditLog` — the portal appends `_CL`).
 3. Create a new DCR and select the DCE from step 1.
 4. **Schema and transformation** → **Browse for files** → upload [`sample-schema.json`](./sample-schema.json).
    - The wizard infers all 62 source columns with the correct types (including `dynamic` for `actor_location`, `config`, `events`, `repositories_added`, `repositories_added_names`).
@@ -209,7 +209,7 @@ Create the DCR-based custom log table with these columns:
 ## Verify
 
 ```kql
-CustomGitHubAuditLog_CL
+GitHubAuditLog_CL
 | take 10
 ```
 
@@ -221,7 +221,7 @@ Allow up to 30 minutes after creating the role assignment before the first recor
 
 ```kql
 // Count requests by actor country
-CustomGitHubAuditLog_CL
+GitHubAuditLog_CL
 | where isnotnull(ActorLocation)
 | extend Country = tostring(ActorLocation.country_code)
 | summarize count() by Country
@@ -229,7 +229,7 @@ CustomGitHubAuditLog_CL
 
 ```kql
 // Expand audit log stream events into individual rows
-CustomGitHubAuditLog_CL
+GitHubAuditLog_CL
 | where Action == "business.update_audit_log_stream"
 | mv-expand Events
 | project TimeGenerated, Actor, Event = tostring(Events)
@@ -237,14 +237,14 @@ CustomGitHubAuditLog_CL
 
 ```kql
 // Inspect config for hook/audit-stream changes
-CustomGitHubAuditLog_CL
+GitHubAuditLog_CL
 | where isnotnull(Config)
 | project TimeGenerated, Action, Actor, Config
 ```
 
 ```kql
 // List repositories added in install/permission events
-CustomGitHubAuditLog_CL
+GitHubAuditLog_CL
 | where isnotnull(RepositoriesAddedNames)
 | mv-expand RepositoryName = RepositoriesAddedNames to typeof(string)
 | project TimeGenerated, Actor, Action, RepositoryName
