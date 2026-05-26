@@ -1,0 +1,87 @@
+[
+  {
+    "@timestamp": 1779186566152,
+    "_document_id": "VO32cMtSB-nnTBw5aPzM4Q",
+    "action": "team.add_member",
+    "active": true,
+    "actor": "admin",
+    "actor_id": 259263826,
+    "actor_ip": "1.2.3.4",
+    "actor_is_bot": false,
+    "actor_location": {
+      "country_code": "US"
+    },
+    "application_client_id": "Iv1.abc123def456",
+    "application_id": 1157143,
+    "application_name": "GitHub CLI",
+    "application_type": "oauth_app",
+    "audit_log_stream_enabled": true,
+    "audit_log_stream_id": 12345,
+    "audit_log_stream_result": "success",
+    "audit_log_stream_sink": "azure",
+    "audit_log_stream_sink_details": "namespace",
+    "business": "Contoso",
+    "business_id": 551734,
+    "config": {
+      "url": "https://example.com/webhook",
+      "content_type": "json",
+      "insecure_ssl": "0"
+    },
+    "created_at": 1779186566152,
+    "events": [
+      "push",
+      "pull_request"
+    ],
+    "external_identity_nameid": "admin@contoso.com",
+    "external_identity_username": "admin@contoso.com",
+    "hashed_token": "9MXxD5YvxRyQBH8B84QKY1nTcr9uNKvTCccGEi/ZDlA=",
+    "hook_id": 987654,
+    "integration": "github-actions",
+    "name": "my-resource-name",
+    "oauth_application_id": 1157143,
+    "oauth_application_name": "GitHub CLI",
+    "oauth_credential_type": "access_token",
+    "operation_type": "create",
+    "org": "contoso-org",
+    "org_id": 12345678,
+    "previous_visibility": "private",
+    "programmatic_access_type": "Personal access token (classic)",
+    "public_repo": false,
+    "query_string": "per_page=100&page=1",
+    "rate_limit_remaining": 4999,
+    "reason": "policy_violation",
+    "repo": "contoso/example",
+    "repo_id": 87654321,
+    "repositories_added": [
+      {
+        "id": 1,
+        "name": "repo1"
+      },
+      {
+        "id": 2,
+        "name": "repo2"
+      }
+    ],
+    "repositories_added_names": [
+      "repo1",
+      "repo2"
+    ],
+    "repository_selection": "selected",
+    "request_access_security_header": "header-value",
+    "request_body": "",
+    "request_category": "api",
+    "request_id": "4B0E:325DA3:8832CC3:6B4811C:6A0C3B81",
+    "request_method": "GET",
+    "route": "/enterprises/:enterprise_id/audit-log",
+    "status_code": 200,
+    "team": "/ent:team1",
+    "team_type": "enterprise",
+    "token_id": 4483513491,
+    "token_scopes": "read:audit_log",
+    "url_path": "/enterprises/551734/audit-log",
+    "user": "admin",
+    "user_agent": "Mozilla/5.0",
+    "user_id": 259263826,
+    "visibility": "public"
+  }
+]
